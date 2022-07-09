@@ -32,3 +32,24 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## git flow 
+
+- main: 메인 브랜치, npm 배포 브랜치
+- dev: 메인 개발 브랜치 각 기능 브랜치들이 하나로 병합되는 지점
+- feature: 각 기능 개발 브랜치, 실제 브랜치명은 구현 기능명
+- hotfix: 에러 수정 브랜치
+
+## commit message 컨벤션 
+
+- feat: 새로운 기능의 추가
+- imp: 기존에 존재하는 기능 개선
+- fix: 버그수정
+- docs: 문서 수정
+- refac: 코드 리팩토링
+- chore: 빌드 부분 혹은 패키지 매니저 수정사항
+
+## commit message rule 
+
+- 커밋 메시지 마지막에 작업에대한 관련 issue 번호를 붙여줌 -> 이슈 트랙킹을 위함
+- ex) feat: Button 공통 컴포넌트 작업 #1
