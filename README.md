@@ -53,3 +53,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - 커밋 메시지 마지막에 작업에대한 관련 issue 번호를 붙여줌 -> 이슈 트랙킹을 위함
 - ex) feat: Button 공통 컴포넌트 작업 #1
+
+## Caveats
+
+- Don't refresh the page you are working on while developing because it would cause an error such as Module classNames blah blah
