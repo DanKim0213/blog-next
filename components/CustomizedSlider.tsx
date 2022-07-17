@@ -9,4 +9,6 @@ const CustomizedSlider = styled(Slider)`
   }
 `;
 
-export default CustomizedSlider;
+export default function StyledComponents() {
+  return <CustomizedSlider defaultValue={30} />;
+}
