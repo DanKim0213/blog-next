@@ -9,6 +9,9 @@ const withTM = require('next-transpile-modules')([
   
 module.exports = {
   reactStrictMode: true,
+  compiler: {
+    styledComponents: true,
+  },
   ...withTM({
     webpack: (config) => {
       config.resolve.alias = {
