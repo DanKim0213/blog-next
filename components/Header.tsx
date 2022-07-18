@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import LogoDevIcon from "@mui/icons-material/LogoDev";
+import SearchIcon from "@mui/icons-material/Search";
 import { Box, Button, TextField } from "@mui/material";
 
 const StyledHeader = styled.header`
@@ -15,6 +16,8 @@ const StyledHeader = styled.header`
 `;
 
 const Header = () => {
+  const clickHandler = () => console.log("clicked");
+
   return (
     <StyledHeader>
       <LogoDevIcon style={{ fontSize: "3rem" }} />
@@ -29,15 +32,22 @@ const Header = () => {
           },
         }}
       />
+      <Box sx={{ position: "relative", left: -40, padding: "0 5px" }}>
+        <SearchIcon onClick={clickHandler} />
+      </Box>
       <Box
         sx={{
           ml: "auto",
         }}
       >
-        <Button href="/login" sx={{ mr: 3 }} variant="text">
+        <Button
+          href="/login"
+          sx={{ mr: 3, textTransform: "unset", color: "black" }}
+          variant="text"
+        >
           Log In
         </Button>
-        <Button sx={{ mr: 3 }} variant="outlined">
+        <Button sx={{ mr: 3, textTransform: "unset" }} variant="outlined">
           Create Account
         </Button>
       </Box>
